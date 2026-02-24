@@ -58,13 +58,13 @@ namespace Topic_5._2___If_and_Else_Statements
 
             if (grade < 50)
                 Console.WriteLine("That is an F!");
-            if (grade <= 65)
+            else if (grade <= 65)
                 Console.WriteLine("That is a D!");
-            if (grade <= 75)
+            else if (grade <= 75)
                 Console.WriteLine("That is a C!");
-            if (grade <= 85)
+            else if (grade <= 85)
                 Console.WriteLine("That is a B!");
-            if (grade > 85)
+            else
                 Console.WriteLine("That is an A!");
 
 
