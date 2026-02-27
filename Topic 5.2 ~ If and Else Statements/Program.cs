@@ -67,10 +67,84 @@ namespace Topic_5._2___If_and_Else_Statements
             else
                 Console.WriteLine("That is an A!");
 
+            /*
+            What do you think 'else if' does?
+            It checks for multiple conditions. If it finds the one that meets the conditions, and executes the code. 
 
+            What does the else at the end do?
+            It gives us a default code to execute in case all the previous conditions are not met.
+            */
 
+            // Task 1
 
+            string userInput;
 
+            Console.WriteLine(" ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("What is the color of the sky? \nPlease pick ONE of the following: \n\ta) RED \n\tb) ORANGE \n\tc) BLUE \n\td) GREEN");
+            Console.Write("Enter here (name of color): ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            userInput = Console.ReadLine().ToLower();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(" ");
+
+            if (userInput == "red")
+                Console.WriteLine("Silly! The sky is not red!");
+
+            else if (userInput == "orange")
+                Console.WriteLine("Silly! The sky is not orange!");
+
+            else if (userInput == "blue")
+                Console.WriteLine("GREAT! The sky is indeed blue!");
+
+            else 
+                Console.WriteLine("Silly! The sky is not green! Go touch some grass!");
+
+            Console.WriteLine(" ");
+
+            // Task 2
+
+            int temperature;
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Input a temperature in Celsius and I will tell you the state of water in that specific temperature!");
+            Console.Write("Enter here: ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            temperature = Convert.ToInt32(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            if (temperature <= 0)
+                Console.WriteLine("The water is in solid state! Wanna eat some ice??");
+            else if (temperature >= 0 && temperature <= 100)
+                Console.WriteLine("The water is in liquid state! Wanna have a glass of water?");
+            else
+                Console.WriteLine("The water is in gaseous state! Wanna breathe!?");
+
+            Console.WriteLine(" ");
+
+            // Task 3
+
+            int userAge;
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("Enter your age: ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            userAge = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" ");
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            if (userAge <= 0)
+                Console.WriteLine("Invalid age input.");
+            else if (userAge < 16)  
+                Console.WriteLine("You can't drive.");
+            else if (userAge < 17 && age >= 16)
+                Console.WriteLine("You can drive but not vote.");
+            else if (userAge > 18 && age < 24)
+                Console.WriteLine("You can vote but not rent a car.");
+  
+            else
+                Console.WriteLine("You can do pretty much everything! You can drive, vote, and rent a car!");
+             
 
 
 
