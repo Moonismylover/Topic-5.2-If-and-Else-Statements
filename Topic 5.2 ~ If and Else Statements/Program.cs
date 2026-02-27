@@ -141,7 +141,6 @@ namespace Topic_5._2___If_and_Else_Statements
                 Console.WriteLine("You can drive but not vote.");
             else if (userAge > 18 && age < 24)
                 Console.WriteLine("You can vote but not rent a car.");
-  
             else
                 Console.WriteLine("You can do pretty much everything! You can drive, vote, and rent a car!");
              
